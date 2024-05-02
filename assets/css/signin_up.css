@@ -1,0 +1,98 @@
+
+.overlay{
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  backdrop-filter: blur(3px);
+  display: block;
+  z-index: 100;
+}
+.modal{
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  background: rgba(246, 255, 255, .8);
+  padding: 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 90%;
+  height: 85%;
+  display: block;
+  z-index: 200;
+}
+
+.hidden{
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .modal{
+    max-width: 30rem;
+    left: calc(50% - 15rem);
+  }
+  
+}
+
+.modal .close-modal{
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  border: none;
+  background: #555;
+  border-radius: 100px;
+  padding: 0 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+}
+
+form{
+  height: 80%;
+}
+#sign-form-1 input,
+#sign-form-2 input{
+  width: 20rem;
+  /* padding: .3rem; */
+  background: transparent;
+  border: none;
+  border-bottom: #555 solid 2px;
+  margin-bottom: 1rem;
+  outline: none;
+  color: #555;
+  font-size: 18px;
+}
+#sign-form-1 label,
+#sign-form-2 label{
+  color: #555;
+  margin: .5rem auto;
+}
+#down-arrow{
+  cursor: pointer;
+}
+#down-arrow img{
+  position: relative;
+  width: 3rem;
+  height: 1.2rem;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+#down-arrow:hover img{
+  margin-top: 1rem;
+}
+input[type="file"] {
+  display: none;
+}
+#sign-in-btn{
+  background: #555;
+}
+.show-modal-1:hover,
+.show-modal-2:hover,
+.showw-modal-1:hover,
+.showw-modal-2:hover{
+  color: #555;
+}

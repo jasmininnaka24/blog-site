@@ -1,0 +1,210 @@
+.category-header{
+  width: 70rem;
+  background: rgba(255, 255, 255, .8);
+  text-align: center;
+  margin: -3rem auto 2rem auto;
+  padding: 2rem 0;
+  border-radius: .3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  animation: slideFromBottom .3s ease-in;
+
+}
+.aboutus-box{
+  width: 70rem;
+  margin: auto;
+}
+.aboutus-info{
+  width: 30rem;
+}
+.aboutus-info img{
+  width: 25rem;
+}
+.aboutus-persons{
+  width: 40rem;
+}
+.abouttus-user img{
+  width: 30rem;
+  height: 8rem;
+  border-radius: 100px;
+}
+.abouttus-user p {
+  margin-top: 1rem;
+  padding: .5rem 1.2rem;
+  background: #5cc7b8;
+  font-weight: 700;
+  border-radius: 1rem;
+}
+.para{
+  width: 70rem; margin: auto; margin-top: 3rem; font-weight: 500;
+}
+
+
+.overlay{
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  backdrop-filter: blur(3px);
+  display: block;
+}
+
+.modal-1{
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  background: rgb(243, 247, 248,.9);
+  padding: 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 40%;
+  min-height: 70%;
+  display: block;
+  z-index: 100;
+}
+
+.hidden{
+  display: none;
+}
+
+.developer-1,
+.developer-2,
+.developer-3{
+  cursor: pointer;
+}
+
+
+.modal-1 .close-modal-1{
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  border: none;
+  background: #555;
+  border-radius: 100px;
+  padding: 0 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (min-width: 40rem) {
+  .modal{
+    max-width: 20rem;
+    left: calc(50% - 15rem);
+  }
+}
+
+
+@media (max-width:1150px){
+  .category-header{
+    width: 50rem;
+  }
+  .aboutus-box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+  }
+  .aboutus-info{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    width: 25rem;
+  }
+  .aboutus-persons{
+    width: 25rem;
+  }
+  .aboutus-info p{
+    text-align: center;
+    width: 40rem;
+  }
+  .para{
+    width: 40rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px){
+  .category-header{
+    width: 30rem;
+  }
+  .aboutus-box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+  }
+  .aboutus-info{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    width: 15rem;
+  }
+  .aboutus-persons{
+    width: 15rem;
+  }
+  .abouttus-user p{
+    text-align: center;
+  }
+  .aboutus-info p{
+    text-align: center;
+    width: 15rem;
+  }
+  .para{
+    width: 25rem;
+    text-align: center;
+  }
+  .modal-1{
+    width: 80%;
+    left: 10%;
+  }
+} 
+@media (max-width: 550px) {
+  .modal-1{
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 500px){
+  .about-us-persons{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutus-info img{
+    width: 18rem;
+  }
+  .category-header{
+    width: 20rem;
+  }
+  .aboutus-box{
+    width: 20rem;
+  }
+  .modal-1{
+    width: 90%;
+    left: 5%;
+  }
+  .para{
+    width: 15rem;
+  }
+}
+@media (max-width: 320px){
+
+  .aboutus-info img{
+    width: 15rem;
+  }
+  .category-header{
+    width: 15rem;
+  }
+  .aboutus-box{
+    width: 15rem;
+  }
+}
